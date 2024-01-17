@@ -1,0 +1,18 @@
+body{
+    background-color: var(--myBlackHEX);
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+
+}
+
+:root {
+    --myBlueHEX: #008BF8;
+    --myBlueRGB: 0,139,248;
+
+    --myBlackHEX: #1B2021;
+    --myBlackRGB: 27,32,33;
+
+    --myWhiteHEX: #FCF7F8;
+    --myWhiteRGB: 252,247,248;
+}

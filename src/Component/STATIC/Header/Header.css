@@ -1,0 +1,75 @@
+.headerDimension {
+    border: 5px solid var(--myBlueHEX);
+    border-radius: 40px;
+    height: 100%;
+    padding: 1% 2%;
+}
+
+.textAndImage {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px var(--myBlueHEX) dashed;
+    padding: 0.5% 1.5% 1.5%;
+}
+
+.selfieImage {
+    border: 6px solid var(--myBlueHEX);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.highlightWord {
+    color: var(--myBlueHEX);
+}
+
+.iconColor {
+    color: var(--myBlueHEX);
+}
+
+.text {
+    color: var(--myWhiteHEX);
+    width: 80%;
+}
+
+.myStats {
+    display: flex;
+    justify-content: space-around;
+    color: var(--myBlueHEX);
+}
+
+.statDescription {
+    color: var(--myWhiteHEX);
+}
+
+
+@media (max-width: 1550px) {
+    .myStats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1400px) {
+    .textAndImage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selfieImage{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .singleStat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}
