@@ -1,0 +1,107 @@
+.heroSection {
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.skillsSection {
+    height: 100%;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.skillsTemplate {
+    height: 100%;
+    width: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: var(--myWhiteHEX)
+}
+
+.skillsTemplateStack {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 4px solid var(--myBlueHEX);
+    border-radius: 4rem;
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
+}
+
+.techSkillImage {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+}
+
+.softSkillButton {
+    --ch-white: #e1e1e1;
+    border-radius: 8px;
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 15px;
+    border: none;
+    color: var(--myWhiteHEX);
+    position: relative;
+    font-weight: 700;
+    transition-duration: .2s;
+    background-color: var(--myBlackHEX);
+}
+
+.softSkillButton:before, .softSkillButton:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,
+    var(--myBlackHEX), var(--myBlackHEX),
+    var(--myWhiteHEX), var(--myBlueHEX), var(--myWhiteHEX),
+    var(--myBlackHEX), var(--myBlackHEX), var(--myBlackHEX));
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 40s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.softSkillButton:after {
+    filter: blur(10px);
+}
+
+@media (max-width: 1300px) {
+    .skillsSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skillsTemplate{
+        margin: 0;
+        width: 100%;
+    }
+
+    .softSkillsText{
+        margin-top: 4rem;
+    }
+}
