@@ -1,0 +1,77 @@
+.schoolDimension {
+    color: white;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.miniHeaderSchool {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.textColor {
+    color: var(--myBlueHEX);
+}
+
+.orderList {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: 0;
+    text-align: center;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.customBorder {
+    border-left: 2px solid var(--myBlueHEX);
+    border-right: 2px solid var(--myBlueHEX);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.avgGradText {
+    text-align: end;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1500px) {
+    .fields {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1100px) {
+    .fields {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .avgGradText {
+        text-align: center;
+    }
+
+    .miniHeaderSchool {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orderList {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .fields {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

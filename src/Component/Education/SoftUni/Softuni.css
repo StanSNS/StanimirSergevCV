@@ -1,0 +1,258 @@
+.universityDimension {
+    color: var(--myWhiteHEX);
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.miniHeaderUni {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.cards__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
+    padding: 2rem;
+}
+
+.card {
+    padding: 1.5em 2em;
+    display: grid;
+    color: #eceff1;
+    background-color: #2b2b2b;
+    border: 1px solid #eceff133;
+    border-radius: 15px;
+}
+
+.card:hover {
+    background: white;
+    color: #000;
+    outline: 1px solid rgb(255, 255, 255);
+    box-shadow: inset 0 0 80px whitesmoke,
+    inset 20px 0 80px rgba(173, 216, 230, 0.747),
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #add8e6,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff, -10px 0 80px #add8e6,
+    10px 0 80px #0ff;
+    transition: all ease-in-out 0.3s;
+}
+
+.card:hover .titleIcon {
+    color: var(--myBlackHEX);
+}
+
+.card:hover .studyDesc {
+    border-left: 2px solid var(--myBlackHEX);
+}
+
+.documentButton {
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    border-radius: 7px;
+    border: 2px solid rgb(var(--myWhiteRGB));
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.documentButton:hover {
+    background: linear-gradient(270deg, #d0fec0, #03f7ce);
+    box-shadow: 0 0 30px 5px rgba(3, 247, 206, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.documentButton:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.documentButton::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.card:hover .documentButton {
+    color: black;
+    font-weight: bold;
+    border: 2px solid rgb(var(--myBlackRGB));
+}
+
+.buttonBox {
+    display: flex;
+    gap: 2rem;
+}
+
+.studyDesc {
+    border-left: 2px solid var(--myBlueHEX);
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+.buttonAndGrade {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cardTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleIcon {
+    color: var(--myBlueHEX);
+    font-size: 25px;
+}
+
+.flagDimension {
+    width: 30px;
+    height: auto;
+}
+
+.gradeAndFlag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-modal .modal-content {
+    background-color: var(--myBlackHEX);
+    color: var(--myWhiteHEX);
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
+}
+
+.modalBodyImages {
+    min-height: 35rem;
+}
+
+.removeBorder {
+    border: none;
+    outline: none;
+}
+
+.btn-close {
+    background-color: var(--myBlueHEX);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--myBlackHEX);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+.swiper-slide img.loaded {
+    opacity: 1;
+}
+
+.swiper-slide-with-icon {
+    position: relative;
+}
+
+.eyeIcon {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 10rem;
+    height: 10rem;
+    top: 50%;
+    color: var(--myBlueHEX);
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    transition: color 0.2s ease-in-out;
+}
+
+.swiper-slide-with-icon:hover .eyeIcon {
+    opacity: 1;
+}
+
+.swiper-slide-with-icon:hover img {
+    opacity: 0.4;
+}
+
+.eyeIcon:hover {
+    color: #03F7CEFF;
+    cursor: pointer;
+}
+
+.timesIcon {
+    color: orangered;
+    font-size: 10rem;
+}
+
+@media (max-width: 1400px) {
+    .cards__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .cards__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,5 +1,5 @@
 .headerDimension {
-    border: 5px solid var(--myBlueHEX);
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
     border-radius: 40px;
     height: 100%;
     padding: 1% 2%;
@@ -15,7 +15,7 @@
 }
 
 .selfieImage {
-    border: 6px solid var(--myBlueHEX);
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -55,12 +55,17 @@
 
 @media (max-width: 1400px) {
     .textAndImage {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
     .selfieImage{
-        margin-top: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
 }

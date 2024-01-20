@@ -2,9 +2,10 @@ import React from 'react';
 import "./index.css"
 
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import Footer from "./Component/STATIC/Footer/Footer";
-import Header from "./Component/STATIC/Header/Header";
+import Footer from "./Component/Footer/Footer";
+import Header from "./Component/Header/Header";
 import Hero from "./Component/Hero/Hero";
+import Education from "./Component/Education/Education";
 
 const App = () => {
     return (
@@ -13,7 +14,7 @@ const App = () => {
                 <Header/>
 
                 <Routes>
-                    <Route path="/" element={<Hero/>}/>
+                    <Route path="/" element={<> <Hero/> <Education/></>}/>
                 </Routes>
 
                 <Footer/>

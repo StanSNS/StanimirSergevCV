@@ -25,7 +25,6 @@
     justify-content: center;
     margin-top: 2rem;
     padding: 2rem;
-    border: 4px solid var(--myBlueHEX);
     border-radius: 4rem;
     box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
 }
@@ -36,59 +35,66 @@
     border-radius: 50%;
     object-fit: cover;
     border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.techSkillImage:hover {
+    scale: 1.2;
 }
 
 .softSkillButton {
-    --ch-white: #e1e1e1;
-    border-radius: 8px;
-    width: auto;
-    height: 40px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background: rgb(0,255,255);
+    background: linear-gradient(180deg, rgba(0,255,255,1) 0%, rgba(0,139,248,1) 100%);
+    border-radius: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 0 15px;
+    color: var(--myBlackHEX);
+    font-weight: bold;
     border: none;
-    color: var(--myWhiteHEX);
-    position: relative;
-    font-weight: 700;
-    transition-duration: .2s;
-    background-color: var(--myBlackHEX);
+    outline: none;
+    overflow: hidden;
+    font-size: 16px;
+    margin: 0.6rem;
 }
 
-.softSkillButton:before, .softSkillButton:after {
-    content: '';
+.softSkillButton:hover {
+    transform: scale(1.05);
+}
+
+.softSkillButton::before {
+    animation: shine 3s ease-out infinite;
+    content: "";
     position: absolute;
-    left: -2px;
-    top: -2px;
-    border-radius: 10px;
-    background: linear-gradient(45deg,
-    var(--myBlackHEX), var(--myBlackHEX),
-    var(--myWhiteHEX), var(--myBlueHEX), var(--myWhiteHEX),
-    var(--myBlackHEX), var(--myBlackHEX), var(--myBlackHEX));
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    animation: steam 40s linear infinite;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
 }
 
-@keyframes steam {
+@keyframes shine {
     0% {
-        background-position: 0 0;
+        left: -100px;
     }
 
-    50% {
-        background-position: 400% 0;
+    60% {
+        left: 100%;
     }
 
-    100% {
-        background-position: 0 0;
+    to {
+        left: 100%;
     }
-}
-
-.softSkillButton:after {
-    filter: blur(10px);
 }
 
 @media (max-width: 1300px) {
@@ -96,12 +102,13 @@
         flex-direction: column;
         align-items: center;
     }
-    .skillsTemplate{
+
+    .skillsTemplate {
         margin: 0;
         width: 100%;
     }
 
-    .softSkillsText{
+    .softSkillsText {
         margin-top: 4rem;
     }
 }
