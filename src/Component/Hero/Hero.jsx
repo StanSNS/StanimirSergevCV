@@ -28,7 +28,7 @@ function Hero() {
                     <h1 className="softSkillsText">Soft Skills</h1>
                     <div className="skillsTemplateStack">
                         {skillsData && skillsData.softSkills.map((skill, index) => (
-                            <button className="softSkillButton m-2 mt-3" key={index}>
+                            <button key={index} className="softSkillButton">
                                 {skill}
                             </button>
                         ))}
