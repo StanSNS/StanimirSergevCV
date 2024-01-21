@@ -1,0 +1,100 @@
+.workSection {
+    margin-top: 3rem;
+    height: 100%;
+    color: white;
+}
+
+.workSubSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.workExperience {
+    margin-top: 5rem;
+}
+
+.workCard {
+    background-color: var(--myBlackHEX);
+    color: var(--myWhiteHEX);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.cardIMG {
+    position: relative;
+    top: -30px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.workImage {
+    border-radius: 15px;
+    width: 80%;
+    object-fit: cover;
+    padding: 0;
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
+    opacity: 0.7;
+}
+
+.workInfo {
+    padding: 0 2rem 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.workDesc {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-description{
+    border-left: 2px solid var(--myBlueHEX);
+    padding-left: 1rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.customFontSize {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.workCard:hover{
+    scale: 1.05;
+}
+
+@media (max-width: 1500px) {
+    .workSubSection {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .workSubSection {
+        padding: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .workSubSection {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .workSubSection {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+}

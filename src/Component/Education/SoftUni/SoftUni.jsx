@@ -118,7 +118,7 @@ function SoftUni() {
                                 className="mySwiper mb-4"
                             >
                                 {modalImages.map((image, index) => (
-                                    <SwiperSlide key={index} className="swiper-slide-with-icon ">
+                                    <SwiperSlide key={index} className="swiper-slide-with-icon educationSwiperSlide ">
                                         <img
                                             src={image}
                                             alt={currentTitle}
