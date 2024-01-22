@@ -1,0 +1,72 @@
+.footerContent {
+    color: var(--myWhiteHEX);
+    height: 100%;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    border-top: 5px dashed var(--myBlueHEX);
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.contactImage {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 1rem;
+    box-shadow: 0 0 35px rgba(var(--myBlueRGB), 60);
+}
+
+.urlLink {
+    color: var(--myWhiteHEX);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.urlLink:hover {
+    color: var(--myBlueHEX);
+    cursor: pointer;
+}
+
+.copyIcon {
+    color: var(--myBlueHEX);
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.copyIcon:hover {
+    scale: 1.05;
+}
+
+.modalBody {
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .footerContent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contactImage {
+        margin-bottom: 1rem;
+    }
+}
