@@ -8,6 +8,7 @@ import Hero from "./Component/Hero/Hero";
 import Education from "./Component/Education/Education";
 import Work from "./Component/Work/Work";
 import Project from "./Component/Project/Project";
+import Interest from "./Component/Interest/Interest";
 
 const App = () => {
     return (
@@ -16,12 +17,15 @@ const App = () => {
                 <Header/>
 
                 <Routes>
-                    <Route path="/" element={<>
-                        {/*<Hero/>*/}
-                        {/*<Education/>*/}
-                        {/*<Work/>*/}
-                        <Project/>
-                    </>}/>
+                    <Route path="/" element={
+                        <>
+                            <Hero/>
+                            <Education/>
+                            <Work/>
+                            <Project/>
+                            <Interest/>
+                        </>
+                    }/>
                 </Routes>
 
                 <Footer/>
