@@ -16,7 +16,6 @@ function Sunderland() {
                     <li><p>Discontinued after the first year</p></li>
                 </ul>
             </div>
-            <h1 className="text-center textColor mt-4 mb-4">Fields of Study</h1>
             <div className="sunderlandFields">
                 <div>
                     <ul className="myOrderList mt-4">

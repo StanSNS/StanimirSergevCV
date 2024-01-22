@@ -4,7 +4,7 @@ import interestsData from "../../Resources/Data/interests";
 function Interest() {
     return (
         <div className="workSection">
-            <h1 className="text-center textColor">Interests</h1>
+            <h1 className="text-center">Interests</h1>
             <div className="interestSection">
                 {interestsData.map((interest, index) => (
                     <div className="interestPart">

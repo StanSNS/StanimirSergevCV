@@ -56,8 +56,7 @@ function SoftUni() {
                     <li><h2>From 2022 To 2024</h2></li>
                 </ul>
             </div>
-            <h1 className="text-center textColor mt-4 mb-5">Fields of Study</h1>
-            <div className="cards__inner">
+            <div className="cards__inner mt-5">
                 {softUniData.map((data, index) => (
                     <div key={index} className="card">
                         <div>

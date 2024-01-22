@@ -87,8 +87,9 @@
 @media (max-width: 900px) {
     .workSubSection {
         grid-template-columns: repeat(1, 1fr);
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
     }
 }
 
