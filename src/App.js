@@ -7,6 +7,7 @@ import Header from "./Component/Header/Header";
 import Hero from "./Component/Hero/Hero";
 import Education from "./Component/Education/Education";
 import Work from "./Component/Work/Work";
+import Project from "./Component/Project/Project";
 
 const App = () => {
     return (
@@ -15,7 +16,12 @@ const App = () => {
                 <Header/>
 
                 <Routes>
-                    <Route path="/" element={<><Hero/><Education/><Work/></>}/>
+                    <Route path="/" element={<>
+                        {/*<Hero/>*/}
+                        {/*<Education/>*/}
+                        {/*<Work/>*/}
+                        <Project/>
+                    </>}/>
                 </Routes>
 
                 <Footer/>
