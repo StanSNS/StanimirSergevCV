@@ -1,0 +1,35 @@
+.workSection {
+    height: 100%;
+}
+
+.interestSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.interestPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2.5rem;
+    transition: all ease-in-out 0.3s;;
+}
+
+.interestPart:hover {
+    scale: 1.1;
+}
+
+.interestIcon {
+    font-size: 50px;
+    color: var(--myWhiteHEX);
+}
+
+.interestText {
+    font-weight: bold;
+    color: var(--myBlueHEX);
+    text-align: center;
+}
