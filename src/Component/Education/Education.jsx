@@ -4,9 +4,9 @@ import School from "./School/School";
 import SoftUni from "./SoftUni/SoftUni";
 import Sunderland from "./Sudnerland/Sudnerland";
 
-import schoolImage from '../../Resources/Images/school.jpg'
-import softUniImage from '../../Resources/Images/softuni.jpg'
-import sunderland from "../../Resources/Images/sunderland.png"
+import schoolImage from '../../Resources/Images/Education/school.jpg'
+import softUniImage from '../../Resources/Images/Education/softuni.png'
+import sunderland from "../../Resources/Images/Education/sunderland.png"
 
 function Education() {
     const [displayText, setDisplayText] = useState("Software University");

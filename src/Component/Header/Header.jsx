@@ -1,5 +1,5 @@
 import './Header.css'
-import selfie from '../../Resources/Images/selfie.jpg'
+import selfie from '../../Resources/Images/Header/selfie.jpg'
 import {FaLocationDot} from "react-icons/fa6";
 import {IoMdMale} from "react-icons/io";
 import {PiBabyFill} from "react-icons/pi";

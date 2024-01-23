@@ -1,8 +1,8 @@
 import './Softuni.css'
 import softUniData from "../../../Resources/Data/universityData";
 
-import bgFlag from "../../../Resources/Images/bg.png";
-import euFlag from "../../../Resources/Images/eu.png";
+import bgFlag from "../../../Resources/Images/Education/bg.png";
+import euFlag from "../../../Resources/Images/Education/eu.png";
 import {Modal} from "react-bootstrap";
 import {useEffect, useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
