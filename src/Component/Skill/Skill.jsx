@@ -1,13 +1,13 @@
-import './Hero.css'
+import './Skill.css'
 import {OverlayTrigger, Tooltip} from "react-bootstrap";
 import skillsData from '../../Resources/Data/Skills';
 
-function Hero() {
+function Skill() {
     return (
-        <div className="heroSection">
+        <div className="skillsDimension">
             <div className="skillsSection">
                 <div className="skillsTemplate text-center">
-                    <h1>Tech Skills</h1>
+                    <h1 className="mb-5">Tech Skills</h1>
                     <div className="skillsTemplateStack">
                         {skillsData && skillsData.techSkills.map((techSkill, index) => (
                             <OverlayTrigger
@@ -25,7 +25,7 @@ function Hero() {
                 </div>
 
                 <div className="skillsTemplate text-center">
-                    <h1 className="softSkillsText">Soft Skills</h1>
+                    <h1 className="softSkillsText mb-5">Soft Skills</h1>
                     <div className="skillsTemplateStack">
                         {skillsData && skillsData.softSkills.map((skill, index) => (
                             <button key={index} className="softSkillButton">
@@ -39,4 +39,4 @@ function Hero() {
     );
 }
 
-export default Hero;
+export default Skill;

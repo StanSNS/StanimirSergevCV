@@ -1,14 +1,11 @@
 .footerContent {
     color: var(--myWhiteHEX);
     height: 100%;
-    display: grid;
-    gap: 2.5rem;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    border-top: 5px dashed var(--myBlueHEX);
-    margin-top: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
 }
 
 .contactImage {
@@ -20,9 +17,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-    border-radius: 45px;
-    padding: 1rem;
-    box-shadow: 0 0 35px rgba(var(--myBlueRGB), 60);
+    padding: 2rem;
 }
 
 .urlLink {
@@ -37,36 +32,18 @@
     cursor: pointer;
 }
 
-.copyIcon {
-    color: var(--myBlueHEX);
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    transition: all ease-in-out 0.3s;
-    cursor: pointer;
-}
-
-.copyIcon:hover {
-    scale: 1.05;
-}
-
 .modalBody {
     background-color: black;
     color: greenyellow;
     text-align: center;
 }
 
-@media (max-width: 767px) {
-    .footerContent {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .contact {
         flex-direction: column;
     }
 
-    .contactImage {
+    .contactImage{
         margin-bottom: 1rem;
     }
 }

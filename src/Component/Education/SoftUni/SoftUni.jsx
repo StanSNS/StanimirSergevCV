@@ -1,8 +1,8 @@
 import './Softuni.css'
 import softUniData from "../../../Resources/Data/universityData";
 
-import bgFlag from "../../../Resources/Images/bg.png";
-import euFlag from "../../../Resources/Images/eu.png";
+import bgFlag from "../../../Resources/Images/Education/bg.png";
+import euFlag from "../../../Resources/Images/Education/eu.png";
 import {Modal} from "react-bootstrap";
 import {useEffect, useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -53,11 +53,10 @@ function SoftUni() {
                 </ul>
                 <ul className="orderList">
                     <li><h1 className="text-center textColor">Duration</h1></li>
-                    <li><h2>From 2022 To 2024</h2></li>
+                    <li><h2>06.2022 - 04.2024</h2></li>
                 </ul>
             </div>
-            <h1 className="text-center textColor mt-4 mb-5">Fields of Study</h1>
-            <div className="cards__inner">
+            <div className="cards__inner mt-5">
                 {softUniData.map((data, index) => (
                     <div key={index} className="card">
                         <div>

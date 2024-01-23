@@ -4,15 +4,35 @@ import School from "./School/School";
 import SoftUni from "./SoftUni/SoftUni";
 import Sunderland from "./Sudnerland/Sudnerland";
 
-import schoolImage from '../../Resources/Images/school.jpg'
-import softUniImage from '../../Resources/Images/softuni.jpg'
-import sunderland from "../../Resources/Images/sunderland.png"
+import schoolImage from '../../Resources/Images/Education/school.jpg'
+import softUniImage from '../../Resources/Images/Education/softuni.png'
+import sunderland from "../../Resources/Images/Education/sunderland.png"
 
 function Education() {
     const [displayText, setDisplayText] = useState("Software University");
 
     const handleRadioChange = (event) => {
         setDisplayText(event.target.value);
+    };
+
+    const handleEducationTitleClick = (displayText) => {
+        let schoolURL;
+
+        switch (displayText) {
+            case 'SU Vasil Levski':
+                schoolURL = 'https://www.sulevski-ruse.org/';
+                break;
+            case 'Software University':
+                schoolURL = 'https://softuni.bg/';
+                break;
+            case 'University of Sunderland':
+                schoolURL = 'https://www.sunderland.ac.uk/';
+                break;
+            default:
+                console.error("Could not open the education link for the current school: " + {displayText})
+                break;
+        }
+        window.open(schoolURL, '_blank');
     };
 
     const backgroundImageUrl = displayText === "SU Vasil Levski"
@@ -23,9 +43,9 @@ function Education() {
 
     return (
         <>
-            <div className="educationDimension mt-5 mb-5">
+            <div className="educationDimension mb-5">
                 <>
-                    <h1>Education History</h1>
+                    <h1 className="mb-3">Education History</h1>
                     <div className="radio-input-wrapper">
                         <label className="label">
                             <input
@@ -68,7 +88,7 @@ function Education() {
                 </>
             </div>
             <div className="imageContainer" style={{backgroundImage: `url(${backgroundImageUrl})`}}>
-                <h2 className="schoolTitle">{displayText}</h2>
+                <h2 className="schoolTitle" onClick={() => handleEducationTitleClick(displayText)}>{displayText}</h2>
             </div>
             {displayText === "SU Vasil Levski" && (<School/>)}
             {displayText === "Software University" && (<SoftUni/>)}

@@ -1,5 +1,7 @@
-.workSection {
+.interestDimension {
     height: 100%;
+    color: var(--myWhiteHEX);
+    margin-top: 3.5rem;
 }
 
 .interestSection {

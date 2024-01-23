@@ -8,7 +8,7 @@ import workExperience from "../../Resources/Data/workEperience";
 function Work() {
     return (
         <div className="workSection">
-            <h1 className="text-center textColor">Work history</h1>
+            <h1 className="text-center mb-3">Work history</h1>
             <div className="workSubSection">
                 {workExperience.map((work, index) => (
                     <div className="workExperience" key={index}>
