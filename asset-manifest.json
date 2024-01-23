@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/StanimirSergevCV/static/css/main.9dcbe2ae.css",
-    "main.js": "/StanimirSergevCV/static/js/main.a6743747.js",
+    "main.css": "/StanimirSergevCV/static/css/main.5a2cf9e5.css",
+    "main.js": "/StanimirSergevCV/static/js/main.7a99d55e.js",
     "static/js/787.a8f7153d.chunk.js": "/StanimirSergevCV/static/js/787.a8f7153d.chunk.js",
     "static/media/selfie.jpg": "/StanimirSergevCV/static/media/selfie.36c1e57c365731f55622.jpg",
     "static/media/softuni.png": "/StanimirSergevCV/static/media/softuni.652d9c329f1adda32b80.png",
@@ -96,12 +96,12 @@
     "static/media/github.jpg": "/StanimirSergevCV/static/media/github.467569fac0a77593da0b.jpg",
     "static/media/mysql.png": "/StanimirSergevCV/static/media/mysql.8ca52c25afffafaa83f1.png",
     "index.html": "/StanimirSergevCV/index.html",
-    "main.9dcbe2ae.css.map": "/StanimirSergevCV/static/css/main.9dcbe2ae.css.map",
-    "main.a6743747.js.map": "/StanimirSergevCV/static/js/main.a6743747.js.map",
+    "main.5a2cf9e5.css.map": "/StanimirSergevCV/static/css/main.5a2cf9e5.css.map",
+    "main.7a99d55e.js.map": "/StanimirSergevCV/static/js/main.7a99d55e.js.map",
     "787.a8f7153d.chunk.js.map": "/StanimirSergevCV/static/js/787.a8f7153d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dcbe2ae.css",
-    "static/js/main.a6743747.js"
+    "static/css/main.5a2cf9e5.css",
+    "static/js/main.7a99d55e.js"
   ]
 }
