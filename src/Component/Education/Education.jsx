@@ -15,6 +15,26 @@ function Education() {
         setDisplayText(event.target.value);
     };
 
+    const handleEducationTitleClick = (displayText) => {
+        let schoolURL;
+
+        switch (displayText) {
+            case 'SU Vasil Levski':
+                schoolURL = 'https://www.sulevski-ruse.org/';
+                break;
+            case 'Software University':
+                schoolURL = 'https://softuni.bg/';
+                break;
+            case 'University of Sunderland':
+                schoolURL = 'https://www.sunderland.ac.uk/';
+                break;
+            default:
+                console.error("Could not open the education link for the current school: " + {displayText})
+                break;
+        }
+        window.open(schoolURL, '_blank');
+    };
+
     const backgroundImageUrl = displayText === "SU Vasil Levski"
         ? schoolImage
         : displayText === "University of Sunderland"
@@ -68,7 +88,7 @@ function Education() {
                 </>
             </div>
             <div className="imageContainer" style={{backgroundImage: `url(${backgroundImageUrl})`}}>
-                <h2 className="schoolTitle">{displayText}</h2>
+                <h2 className="schoolTitle" onClick={() => handleEducationTitleClick(displayText)}>{displayText}</h2>
             </div>
             {displayText === "SU Vasil Levski" && (<School/>)}
             {displayText === "Software University" && (<SoftUni/>)}

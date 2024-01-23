@@ -105,6 +105,12 @@
     font-size: 38px;
     font-weight: 700;
     z-index: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+.schoolTitle:hover{
+    color: #45a9f8;
+    cursor: pointer;
 }
 
 @keyframes moveUpDown {
