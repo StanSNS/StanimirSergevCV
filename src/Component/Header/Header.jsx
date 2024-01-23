@@ -14,33 +14,28 @@ function Header() {
                     <h1><span className="align-text-top iconColor"><FaUserTie/></span> Stanimir Naydenov Sergev</h1>
                     <h2 className="mt-3"><span className="align-text-top iconColor"><FaLaptopCode/></span> Full-Stack
                         Web Developer</h2>
-                    <h3 className="description mt-5">
+                    <h3>
                         <span className="align-text-top iconColor">
                             <BiSolidUserPin/>
                         </span> As a
                         <span className="highlightWord"> Full-Stack Developer </span>
-                        with expertise in both
+                        skilled in both
                         <span className="highlightWord"> backend </span>
-                        development and
-                        <span className="highlightWord"> front-end </span>
-                        technologies, I offer a dynamic blend of
-                        <span className="highlightWord"> technical proficiency </span>
-                        and strong
-                        <span className="highlightWord"> soft skills. </span>
-                        A natural
-                        <span className="highlightWord"> problem solver</span>
-                        , I excel in
-                        <span className="highlightWord"> adaptability </span>
+                        and
+                        <span className="highlightWord"> front-end technologies. </span>
+                        I have a strong mix of
+                        <span className="highlightWord"> technical expertise </span>
                         and effective
-                        <span className="highlightWord"> leadership</span>
-                        , contributing seamlessly within cross-functional teams.
-                        My exceptional
-                        <span className="highlightWord"> communication </span>
-                        skills enhance collaboration, and my strong
-                        <span className="highlightWord"> time management </span>
-                        abilities are coupled with a notable achievement: I developed a successful Forex(CFD)
-                        <span className="highlightWord"> trading algorithm</span>
-                        , a pivotal component of a results-driven trading project.
+                        <span className="highlightWord"> soft skills. </span>
+                        As a natural
+                        <span className="highlightWord"> problem solver, </span>
+                        I thrive in adaptable situations and provide strong leadership within
+                        <span className="highlightWord"> cross-functional </span>
+                        teams. My excellent
+                        <span className="highlightWord"> communication skills </span>
+                        foster collaboration, and I have notable achievements, including developing a successful
+                        <span className="highlightWord"> Forex(CFD) trading algorithm </span>
+                        for a results-driven trading project.
                     </h3>
                 </div>
                 <img src={selfie} alt="Selfie" className="selfieImage"/>
