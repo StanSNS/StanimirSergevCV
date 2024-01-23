@@ -53,7 +53,7 @@ function SoftUni() {
                 </ul>
                 <ul className="orderList">
                     <li><h1 className="text-center textColor">Duration</h1></li>
-                    <li><h2>From 2022 To 2024</h2></li>
+                    <li><h2>06.2022 - 04.2024</h2></li>
                 </ul>
             </div>
             <div className="cards__inner mt-5">

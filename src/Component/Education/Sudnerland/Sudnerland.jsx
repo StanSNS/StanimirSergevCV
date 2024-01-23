@@ -12,7 +12,7 @@ function Sunderland() {
                 </ul>
                 <ul className="orderList">
                     <li><h1 className="text-center textColor">Duration</h1></li>
-                    <li><h2>From 2018 To 2022</h2></li>
+                    <li><h2>09.2018 - 05.2019</h2></li>
                     <li><p>Discontinued after the first year</p></li>
                 </ul>
             </div>
