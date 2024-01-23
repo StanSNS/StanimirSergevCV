@@ -4,7 +4,7 @@ import {FaCheck, FaTimes} from "react-icons/fa";
 function Sunderland() {
     return (
         <div className="sunderlandDimension">
-            <div className="miniHeaderUni mt-5">
+            <div className="miniHeaderUni">
                 <ul className="orderList">
                     <li><h1 className="text-center textColor">Specialization</h1></li>
                     <li><h2>Sport and Exercise Sciences</h2></li>

@@ -71,7 +71,6 @@ function Header() {
                     <span className="statDescription"> Open for hiring</span>
                 </h3>
             </div>
-
         </div>
     );
 }

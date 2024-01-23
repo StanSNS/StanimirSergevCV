@@ -23,9 +23,9 @@ function Education() {
 
     return (
         <>
-            <div className="educationDimension mt-5 mb-5">
+            <div className="educationDimension mb-5">
                 <>
-                    <h1>Education History</h1>
+                    <h1 className="mb-3">Education History</h1>
                     <div className="radio-input-wrapper">
                         <label className="label">
                             <input

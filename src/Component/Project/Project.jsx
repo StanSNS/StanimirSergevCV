@@ -16,7 +16,7 @@ function Project() {
 
     return (
         <div className="projectDimension">
-            <h1 className="text-center mt-1  mb-3 ">Projects</h1>
+            <h1 className="text-center">Projects</h1>
             <div className="projectSection ">
                 {projectData.map((project, index) => (
                     <div className="projectCard" key={index}>
