@@ -1,0 +1,143 @@
+.educationDimension {
+    color: var(--myWhiteHEX);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.radio-input-wrapper {
+    display: flex;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 14px 16px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.label:hover,
+.label:focus-within,
+.label:active {
+    background: hsla(0, 0%, 80%, .14);
+}
+
+.radio-input {
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.radio-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+    position: relative;
+}
+
+.radio-design::before {
+    content: '';
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.radio-input:checked + .radio-design::before {
+    transform: scale(0);
+}
+
+.label-text {
+    color: hsl(0, 0%, 60%);
+    margin-left: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    transition: .3s;
+}
+
+.radio-input:checked ~ .label-text {
+    color: hsl(0, 0%, 40%);
+}
+
+.imageContainer {
+    position: relative;
+    padding: 110px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    animation: moveUpDown 60s ease-in-out infinite;
+}
+
+.imageContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: moveUpDown 45s ease-in-out infinite;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.imageContainer .schoolTitle {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--myWhiteHEX);
+    font-size: 38px;
+    font-weight: 700;
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+.schoolTitle:hover{
+    color: #45a9f8;
+    cursor: pointer;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        background-position-y: top;
+    }
+    50% {
+        background-position-y: bottom;
+    }
+}
+
+@media (max-width: 1200px) {
+    .radio-input-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .educationDimension {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .radio-input-wrapper {
+        align-items: flex-start;
+    }
+}

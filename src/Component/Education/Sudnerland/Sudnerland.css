@@ -1,0 +1,42 @@
+.sunderlandDimension {
+    height: 100%;
+    color: var(--myWhiteHEX);
+    margin-top: 2rem;
+}
+
+.sunderlandFields {
+    display: flex;
+    justify-content: space-around;
+}
+
+.myOrderList {
+    list-style-type: none;
+    margin-top: 1rem;
+    text-align: center;
+    border-left: 5px dashed var(--myBlueHEX);
+    border-right: 5px dashed var(--myBlueHEX);
+    padding: 0 2rem;
+}
+
+.checkColor {
+    color: lawngreen;
+}
+
+.timesColor {
+    color: orangered;
+}
+
+@media (max-width: 1700px) {
+    .sunderlandFields {
+        flex-direction: column;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .sunderlandFields {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

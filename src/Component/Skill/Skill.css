@@ -1,0 +1,114 @@
+.skillsDimension {
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.skillsSection {
+    height: 100%;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.skillsTemplate {
+    height: 100%;
+    width: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: var(--myWhiteHEX)
+}
+
+.skillsTemplateStack {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
+}
+
+.techSkillImage {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.techSkillImage:hover {
+    scale: 1.2;
+}
+
+.softSkillButton {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background: rgb(0,255,255);
+    background: linear-gradient(180deg, rgba(0,255,255,1) 0%, rgba(0,139,248,1) 100%);
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--myBlackHEX);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    font-size: 16px;
+    margin: 0.6rem;
+}
+
+.softSkillButton:hover {
+    transform: scale(1.05);
+}
+
+.softSkillButton::before {
+    animation: shine 3s ease-out infinite;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .skillsSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skillsTemplate {
+        margin: 0;
+        width: 100%;
+    }
+
+    .softSkillsText {
+        margin-top: 4rem;
+    }
+}

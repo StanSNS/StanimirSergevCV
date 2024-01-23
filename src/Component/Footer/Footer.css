@@ -1,0 +1,49 @@
+.footerContent {
+    color: var(--myWhiteHEX);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.contactImage {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.urlLink {
+    color: var(--myWhiteHEX);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.urlLink:hover {
+    color: var(--myBlueHEX);
+    cursor: pointer;
+}
+
+.modalBody {
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contactImage{
+        margin-bottom: 1rem;
+    }
+}

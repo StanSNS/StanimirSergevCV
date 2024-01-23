@@ -1,0 +1,80 @@
+.headerDimension {
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
+    border-radius: 40px;
+    height: 100%;
+    padding: 2% 2%;
+}
+
+.textAndImage {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px var(--myBlueHEX) dashed;
+    padding: 0.5% 1.5% 1.5%;
+}
+
+.selfieImage {
+    box-shadow: 0 0 50px rgba(var(--myBlueRGB), 60);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.highlightWord {
+    color: var(--myBlueHEX);
+}
+
+.iconColor {
+    color: var(--myBlueHEX);
+}
+
+.text {
+    color: var(--myWhiteHEX);
+    width: 80%;
+}
+
+.myStats {
+    display: flex;
+    justify-content: space-around;
+    color: var(--myBlueHEX);
+}
+
+.statDescription {
+    color: var(--myWhiteHEX);
+}
+
+
+@media (max-width: 1550px) {
+    .myStats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1400px) {
+    .textAndImage {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .selfieImage{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .singleStat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}
