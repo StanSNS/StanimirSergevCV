@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.css"
 
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 import Skill from "./Component/Skill/Skill";
@@ -15,14 +15,21 @@ const App = () => {
     return (
         <div className="foundationBackgroundColor">
             <BrowserRouter>
-                {/*<Header/>*/}
-
                 <Routes>
-                    <Route path="/" element={<><Skill/><Education/><Work/><Project/><Interest/></>}/>
+                    <Route path="*" element={<Navigate to="/404"/>}/>
                     <Route path="/404" element={<Error404/>}/>
+                    <Route path="/" element={
+                        <>
+                            <Header/>
+                            <Skill/>
+                            <Education/>
+                            <Work/>
+                            <Project/>
+                            <Interest/>
+                            <Footer/>
+                        </>
+                    }/>
                 </Routes>
-
-                {/*<Footer/>*/}
             </BrowserRouter>
         </div>
     );
