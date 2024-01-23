@@ -4,7 +4,7 @@ import "./index.css"
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
-import Hero from "./Component/Hero/Hero";
+import Skill from "./Component/Skill/Skill";
 import Education from "./Component/Education/Education";
 import Work from "./Component/Work/Work";
 import Project from "./Component/Project/Project";
@@ -19,7 +19,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={
                         <>
-                            <Hero/>
+                            <Skill/>
                             <Education/>
                             <Work/>
                             <Project/>

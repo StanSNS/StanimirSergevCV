@@ -1,10 +1,10 @@
-import './Hero.css'
+import './Skill.css'
 import {OverlayTrigger, Tooltip} from "react-bootstrap";
 import skillsData from '../../Resources/Data/Skills';
 
-function Hero() {
+function Skill() {
     return (
-        <div className="heroSection">
+        <div className="skillsDimension">
             <div className="skillsSection">
                 <div className="skillsTemplate text-center">
                     <h1 className="mb-5">Tech Skills</h1>
@@ -39,4 +39,4 @@ function Hero() {
     );
 }
 
-export default Hero;
+export default Skill;
