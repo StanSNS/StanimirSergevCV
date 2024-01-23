@@ -16,8 +16,6 @@ const App = () => {
         <div className="foundationBackgroundColor">
             <BrowserRouter>
                 <Routes>
-                    <Route path="*" element={<Navigate to="/404"/>}/>
-                    <Route path="/404" element={<Error404/>}/>
                     <Route path="/" element={
                         <>
                             <Header/>
@@ -29,6 +27,8 @@ const App = () => {
                             <Footer/>
                         </>
                     }/>
+                    <Route path="*" element={<Navigate to="/404"/>}/>
+                    <Route path="/404" element={<Error404/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
