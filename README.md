@@ -54,7 +54,7 @@ The CV portfolio is organized into the following sections:
 - Contacts: Contact information for reaching out.
 
 ## Hosting
-This CV portfolio is hosted on GitHub Pages. You can access it using the following link: [StanSNS GitHub Pages](https://github.com/StanSNS/StanSNS-CV)
+This CV portfolio is hosted on GitHub Pages. You can access it using the following link: [StanSNS GitHub Pages](http://stansns.github.io/StanimirSergevCV)
 
 ## Contact
 Feel free to reach out to me for any inquiries or collaborations. Here are my contact details:
