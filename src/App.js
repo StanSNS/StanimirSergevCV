@@ -9,26 +9,20 @@ import Education from "./Component/Education/Education";
 import Work from "./Component/Work/Work";
 import Project from "./Component/Project/Project";
 import Interest from "./Component/Interest/Interest";
+import Error404 from "./Component/Error404/Error404";
 
 const App = () => {
     return (
         <div className="foundationBackgroundColor">
             <BrowserRouter>
-                <Header/>
+                {/*<Header/>*/}
 
                 <Routes>
-                    <Route path="/" element={
-                        <>
-                            <Skill/>
-                            <Education/>
-                            <Work/>
-                            <Project/>
-                            <Interest/>
-                        </>
-                    }/>
+                    <Route path="/" element={<><Skill/><Education/><Work/><Project/><Interest/></>}/>
+                    <Route path="/404" element={<Error404/>}/>
                 </Routes>
 
-                <Footer/>
+                {/*<Footer/>*/}
             </BrowserRouter>
         </div>
     );
