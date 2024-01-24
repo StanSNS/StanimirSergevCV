@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/StanimirSergevCV/static/css/main.5a2cf9e5.css",
-    "main.js": "/StanimirSergevCV/static/js/main.7a99d55e.js",
+    "main.js": "/StanimirSergevCV/static/js/main.cd3ea7f6.js",
     "static/js/787.a8f7153d.chunk.js": "/StanimirSergevCV/static/js/787.a8f7153d.chunk.js",
     "static/media/selfie.jpg": "/StanimirSergevCV/static/media/selfie.36c1e57c365731f55622.jpg",
     "static/media/softuni.png": "/StanimirSergevCV/static/media/softuni.652d9c329f1adda32b80.png",
+    "static/media/spaBGfront.jpg": "/StanimirSergevCV/static/media/spaBGfront.cd1d27e81c14959f30cc.jpg",
     "static/media/advBGFront.jpg": "/StanimirSergevCV/static/media/advBGFront.5d8c451e28072683e746.jpg",
     "static/media/oopBGFront.jpg": "/StanimirSergevCV/static/media/oopBGFront.3502ddd3104e096844f5.jpg",
     "static/media/spdBGFront.jpg": "/StanimirSergevCV/static/media/spdBGFront.39f29ee4e9443baff687.jpg",
@@ -28,6 +29,7 @@
     "static/media/intelij.png": "/StanimirSergevCV/static/media/intelij.a2e8e9d1cc55561da6e8.png",
     "static/media/fundEUBack.jpg": "/StanimirSergevCV/static/media/fundEUBack.75404fc4c9cc4f09dc3d.jpg",
     "static/media/fundamentals.jpg": "/StanimirSergevCV/static/media/fundamentals.841d939aca7847ec8c8c.jpg",
+    "static/media/spaEUback.jpg": "/StanimirSergevCV/static/media/spaEUback.23f1156733c37e5d359f.jpg",
     "static/media/oopEUBack.jpg": "/StanimirSergevCV/static/media/oopEUBack.4eff460cdeeaf1210579.jpg",
     "static/media/springFund.jpg": "/StanimirSergevCV/static/media/springFund.db76c4cd80fd3bd19239.jpg",
     "static/media/advEUBack.jpg": "/StanimirSergevCV/static/media/advEUBack.61709de7de5685d7e1e3.jpg",
@@ -37,6 +39,7 @@
     "static/media/azure.png": "/StanimirSergevCV/static/media/azure.5a694f18b0e4f276ce48.png",
     "static/media/fundamentals1.jpg": "/StanimirSergevCV/static/media/fundamentals1.627d7f43c54bed441898.jpg",
     "static/media/stocks.jpg": "/StanimirSergevCV/static/media/stocks.71c67d106f9ee5ebaf7f.jpg",
+    "static/media/spaEUfront.jpg": "/StanimirSergevCV/static/media/spaEUfront.ff5c68e5f387377281af.jpg",
     "static/media/spfEUFront.jpg": "/StanimirSergevCV/static/media/spfEUFront.9bf9c027121b4a4f4218.jpg",
     "static/media/spdEUFront.jpg": "/StanimirSergevCV/static/media/spdEUFront.8760470d782469e6e6a1.jpg",
     "static/media/sqlEUFront.jpg": "/StanimirSergevCV/static/media/sqlEUFront.663ba2b9affa46235100.jpg",
@@ -55,6 +58,7 @@
     "static/media/Spring.png": "/StanimirSergevCV/static/media/Spring.1a753d3a09a8df3cec6c.png",
     "static/media/spdBGBack.jpg": "/StanimirSergevCV/static/media/spdBGBack.7e167a02d3c64c618c3c.jpg",
     "static/media/advBGBack.jpg": "/StanimirSergevCV/static/media/advBGBack.71a30c887ca6bc9d9a71.jpg",
+    "static/media/spaBGBack.jpg": "/StanimirSergevCV/static/media/spaBGBack.8f8f9fe94e418cf6b005.jpg",
     "static/media/oopBGBack.jpg": "/StanimirSergevCV/static/media/oopBGBack.b57e795435264b11b05c.jpg",
     "static/media/sqlBGBack.jpg": "/StanimirSergevCV/static/media/sqlBGBack.5b4a19dcfea12bb40e77.jpg",
     "static/media/githubStartup.jpg": "/StanimirSergevCV/static/media/githubStartup.897573dba0efe7b79a0e.jpg",
@@ -97,11 +101,11 @@
     "static/media/mysql.png": "/StanimirSergevCV/static/media/mysql.8ca52c25afffafaa83f1.png",
     "index.html": "/StanimirSergevCV/index.html",
     "main.5a2cf9e5.css.map": "/StanimirSergevCV/static/css/main.5a2cf9e5.css.map",
-    "main.7a99d55e.js.map": "/StanimirSergevCV/static/js/main.7a99d55e.js.map",
+    "main.cd3ea7f6.js.map": "/StanimirSergevCV/static/js/main.cd3ea7f6.js.map",
     "787.a8f7153d.chunk.js.map": "/StanimirSergevCV/static/js/787.a8f7153d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a2cf9e5.css",
-    "static/js/main.7a99d55e.js"
+    "static/js/main.cd3ea7f6.js"
   ]
 }
