@@ -50,6 +50,10 @@ import spfEUBack from "../Images/Education/SoftUniDocuments/SpringFund/spfEUBack
 
 import springAdvancedUniCertificateOne from "../Images/Education/SoftUniDocuments/SpringAdvanced/springAdv.jpg"
 import springAdvancedUniCertificateTwo from "../Images/Education/SoftUniDocuments/SpringAdvanced/springAdv1.jpg"
+import springAdvancedBGFront from "../Images/Education/SoftUniDocuments/SpringAdvanced/spaBGfront.jpg"
+import springAdvancedBGBack from "../Images/Education/SoftUniDocuments/SpringAdvanced/spaBGBack.jpg"
+import springAdvancedEUFront from "../Images/Education/SoftUniDocuments/SpringAdvanced/spaEUfront.jpg"
+import springAdvancedEUBack from "../Images/Education/SoftUniDocuments/SpringAdvanced/spaEUback.jpg"
 
 
 import {FaAngular, FaCloud, FaInfinity, FaJava} from "react-icons/fa";
@@ -182,7 +186,7 @@ const softUniData = [
             "Deploying a Spring MVC application",
             "Building more complex web applications with the Spring framework"
         ],
-        uniCertificates: [springAdvancedUniCertificateOne, springAdvancedUniCertificateTwo],
+        uniCertificates: [springAdvancedUniCertificateOne, springAdvancedUniCertificateTwo, springAdvancedBGFront, springAdvancedBGBack, springAdvancedEUFront, springAdvancedEUBack],
     },
     {
         name: 'JavaScript Back-End',
