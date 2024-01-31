@@ -15,6 +15,10 @@ function Sunderland() {
                     <li><h2>09.2018 - 05.2019</h2></li>
                     <li><p>Discontinued after the first year</p></li>
                 </ul>
+                <ul className="orderList">
+                    <li><h1 className="text-center textColor">Location</h1></li>
+                    <li><h2>United Kingdom, Sunderland</h2></li>
+                </ul>
             </div>
             <div className="sunderlandFields">
                 <div>

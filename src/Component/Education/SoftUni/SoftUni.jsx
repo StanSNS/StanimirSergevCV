@@ -55,6 +55,10 @@ function SoftUni() {
                     <li><h1 className="text-center textColor">Duration</h1></li>
                     <li><h2>06.2022 - 04.2024</h2></li>
                 </ul>
+                <ul className="orderList">
+                    <li><h1 className="text-center textColor">Location</h1></li>
+                    <li><h2>Bulgaria, Sofia</h2></li>
+                </ul>
             </div>
             <div className="cards__inner mt-5">
                 {softUniData.map((data, index) => (

@@ -15,6 +15,10 @@ function School() {
                     <li><h1 className="text-center textColor">Duration</h1></li>
                     <li><h2>09.2014 - 05.2018</h2></li>
                 </ul>
+                <ul className="orderList">
+                    <li><h1 className="text-center textColor">Location</h1></li>
+                    <li><h2>Bulgaria, Ruse </h2></li>
+                </ul>
             </div>
             <div className="fields mt-4">
                 {subjects.map((subject, index) => (
