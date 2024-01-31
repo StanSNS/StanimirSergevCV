@@ -52,7 +52,7 @@ const projectData = [
     {
         imageContent: githubCV,
         title: "React-GitHub Pages",
-        date: "01.2024 - 01.2222",
+        date: "01.2024 - 01.2024",
         projectType: "Individual project",
         technologies: [
             "GitHub",
