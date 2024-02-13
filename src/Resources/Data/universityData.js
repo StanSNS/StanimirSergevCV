@@ -177,7 +177,7 @@ const softUniData = [
         uniGrade: "6.00",
         euGrade: "6.00",
         icon: SiSpring,
-        date: "todo",
+        date: "09.01.2024",
         fieldsOfStudy: [
             "Building REST services with Spring",
             "Building architecture in Spring MVC applications",
@@ -190,10 +190,10 @@ const softUniData = [
     },
     {
         name: 'JavaScript Back-End',
-        uniGrade: "Expected Soon",
-        euGrade: "Expected Soon",
+        uniGrade: "6.00",
+        euGrade: "6.00",
         icon: IoLogoJavascript,
-        date: "Expected Soon",
+        date: "11.02.2024",
         fieldsOfStudy: [
             "Using a Web Server",
             "Working with the HTTP protocol",
@@ -222,10 +222,10 @@ const softUniData = [
     },
     {
         name: 'Containers and Clouds',
-        euGrade: "Expected Soon",
-        uniGrade: "Expected Soon",
+        euGrade: "6.00",
+        uniGrade: "6.00",
         icon: FaCloud,
-        date: "Expected Soon",
+        date: "10.02.2024",
         fieldsOfStudy: [
             "Working with Linux Shell",
             "Configuring Docker containers",

@@ -139,7 +139,7 @@ function SoftUni() {
                     {modalImages.length === 0 && (
                         <Modal.Body>
                             <h1 className="timesIcon text-center"><FaTimes/></h1>
-                            <h1 className="text-center mb-5">No documents for {currentTitle}</h1>
+                            <h1 className="text-center mb-5">No documents for "{currentTitle}" yet.</h1>
                         </Modal.Body>
                     )}
                 </Modal>
