@@ -5,12 +5,12 @@
 }
 
 .projectSection {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .projectCard {
-    width: 30%;
+    width: 90%;
     border-radius: 30px;
     background-color: var(--myBlackHEX);
     box-shadow: 0 0 30px rgba(var(--myBlueRGB), 60);
@@ -193,16 +193,6 @@
     margin-bottom: 2.3rem;
 }
 
-@media (max-width: 1630px) {
-    .projectSection {
-        flex-wrap: wrap;
-    }
-
-    .projectCard {
-        width: 40%;
-    }
-}
-
 @media (max-width: 1460px) {
     .projectSection {
         grid-template-columns: repeat(2, 1fr);
@@ -210,12 +200,6 @@
 
     .projectCard {
         margin-bottom: 3rem;
-    }
-}
-
-@media (max-width: 1100px) {
-    .projectCard {
-        width: 70%;
     }
 }
 

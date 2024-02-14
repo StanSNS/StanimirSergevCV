@@ -1,6 +1,8 @@
 import githubSpring from "../../Resources/Images/Project/githubSpring.png"
 import githubStartup from "../../Resources/Images/Project/githubStartup.jpg"
 import githubCV from "../../Resources/Images/Project/githubCV.jpg"
+import nodeHBS from "../../Resources/Images/Project/nodeHBS.png"
+import springThy from "../../Resources/Images/Project/springThy.png"
 
 const projectData = [
     {
@@ -100,6 +102,61 @@ const projectData = [
             "a chronological account of my educational background, and an in-depth portrayal of my diverse work " +
             "experiences. Additionally, the platform provides accessible links for seamless connection and communication.",
         githubRepo: "https://github.com/StanSNS/StanimirSergevCV",
+        type: "public"
+    },
+    {
+        imageContent: nodeHBS,
+        title: "NodeJS-HandleBars",
+        date: "02.2024 - 02.2024",
+        projectType: "Individual project",
+        technologies: [
+            "HTML",
+            "CSS",
+            "Handlebars",
+            "Postman",
+            "GitHub",
+            "Node.js",
+            "Express.js",
+            "JavaScript",
+            "MongoDB",
+            "Visual Code",
+        ],
+        additionInfo: "This project marks a significant milestone in my journey, " +
+            "serving as a testament to my proficiency in leveraging cutting-edge technologies to deliver " +
+            "innovative solutions. Developed using Node.js and Handlebars, this dynamic web platform epitomizes " +
+            "excellence in both functionality and design. he primary objective of this initiative is to create a " +
+            "dynamic web platform that seamlessly integrates Node.js backend with Handlebars templating engine to " +
+            "deliver an unparalleled user experience.",
+        githubRepo: "https://github.com/StanSNS/NodeJS-HandleBars",
+        type: "public"
+    },
+    {
+        imageContent: springThy,
+        title: "Spring-Thymeleaf",
+        date: "09.2023 - 09.2023",
+        projectType: "Individual project",
+        technologies: [
+            "HTML",
+            "CSS",
+            "Thymeleaf",
+            "Spring",
+            "Java",
+            "Hibernate",
+            "Junit",
+            "Maven",
+            "Tomcat",
+            "Postman",
+            "GitHub",
+            "MySQL",
+            "IntelliJ",
+        ],
+        additionInfo: "This project stands as a pinnacle of achievement, marking my submission for" +
+            " evaluation at SoftUni. With utmost pride, I present an unparalleled creation, meticulously " +
+            "designed and executed to exceed the expectations of the Software University jury. Every facet " +
+            "of this project has been scrutinized with a keen eye on User Experience (UX), Security, Scalability, " +
+            "Testing, Documentation, Innovation, Creativity, Compliance, Legal Considerations, Functionality, " +
+            "Performance, and Code Quality.",
+        githubRepo: "https://github.com/StanSNS/Spring-Thymeleaf",
         type: "public"
     }
 ];

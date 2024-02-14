@@ -37,6 +37,7 @@ import stripeImage from "../Images/Skills/stripe.png"
 import githubImage from "../Images/Skills/gitHub.jpg"
 import bootstrapImage from "../Images/Skills/bootstrap.png"
 import terraformImage from "../Images/Skills/terraform.png"
+import handleBarsImage from "../Images/Skills/handlebars.png"
 
 const skillsData = {
     softSkills: [
@@ -75,6 +76,7 @@ const skillsData = {
         {name: 'CSS', image: cssImage},
         {name: 'Jest', image: jestImage},
         {name: 'Thymeleaf ', image: thymeleafImage},
+        {name: 'Handlebars ', image: handleBarsImage},
         {name: 'Spring', image: springImage},
         {name: 'Java', image: javaImage},
         {name: 'Hibernate', image: hibernateImage},
