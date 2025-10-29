@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply transition-colors duration-300;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar for dev mode */
+.dev-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dev-scrollbar::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.dev-scrollbar::-webkit-scrollbar-thumb {
+  background: #22d3ee;
+  border-radius: 5px;
+}
+
+.dev-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+  }
+}
