@@ -11,7 +11,7 @@ const HRHeader = () => {
           {/* Profile Photo */}
           <div className="w-40 h-40 rounded-3xl overflow-hidden border-4 border-white/30 shadow-xl">
             <img
-              src="/assets/profile-photo.jpg"
+              src="./assets/profile-photo.jpg"
               alt={personal.name}
               className="w-full h-full object-cover"
             />

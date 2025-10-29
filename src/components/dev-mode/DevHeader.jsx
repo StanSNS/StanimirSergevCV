@@ -40,7 +40,7 @@ const DevHeader = () => {
             {/* Profile Photo */}
             <div className="w-32 h-32 rounded-lg overflow-hidden border-2 border-dev-primary/50 shadow-lg shadow-dev-primary/20 flex-shrink-0">
               <img
-                src="/assets/profile-photo.jpg"
+                src="./assets/profile-photo.jpg"
                 alt={personal.name}
                 className="w-full h-full object-cover"
               />
